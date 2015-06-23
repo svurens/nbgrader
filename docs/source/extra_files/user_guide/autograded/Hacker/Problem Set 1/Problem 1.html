@@ -11642,16 +11642,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Part-A">Part A<a class="anchor-link" href="#Part-A">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Write a function that returns a list of numbers, such that $x_i=i^2$, for $1\leq i \leq n$. Make sure it handles the case where $n<1$ by raising a <code>ValueError</code>.</p>
+<hr>
+<h2 id="Part-A-(2-points)">Part A (2 points)<a class="anchor-link" href="#Part-A-(2-points)">&#182;</a></h2><p>Write a function that returns a list of numbers, such that $x_i=i^2$, for $1\leq i \leq n$. Make sure it handles the case where $n<1$ by raising a <code>ValueError</code>.</p>
 
 </div>
 </div>
@@ -11755,16 +11747,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h2 id="Part-B">Part B<a class="anchor-link" href="#Part-B">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Using your <code>squares</code> function, write a function that computes the sum of the squares of the numbers from 1 to $n$. Your function should call the <code>squares</code> function -- it should NOT reimplement its functionality.</p>
+<h2 id="Part-B-(1-point)">Part B (1 point)<a class="anchor-link" href="#Part-B-(1-point)">&#182;</a></h2><p>Using your <code>squares</code> function, write a function that computes the sum of the squares of the numbers from 1 to $n$. Your function should call the <code>squares</code> function -- it should NOT reimplement its functionality.</p>
 
 </div>
 </div>
@@ -11867,16 +11850,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<h2 id="Part-C">Part C<a class="anchor-link" href="#Part-C">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Using LaTeX math notation, write out the equation that is implemented by your <code>sum_of_squares</code> function.</p>
+<h2 id="Part-C-(1-point)">Part C (1 point)<a class="anchor-link" href="#Part-C-(1-point)">&#182;</a></h2><p>Using LaTeX math notation, write out the equation that is implemented by your <code>sum_of_squares</code> function.</p>
 
 </div>
 </div>
@@ -11890,6 +11864,102 @@ div#notebook {
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+<h2 id="Part-D-(2-points)">Part D (2 points)<a class="anchor-link" href="#Part-D-(2-points)">&#182;</a></h2><p>Find a usecase for your <code>sum_of_squares</code> function and implement that usecase in the cell below.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">hypotenuse</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Finds the hypotenuse of a right triangle with one side of length n and</span>
+<span class="sd">    the other side of length n-1.&quot;&quot;&quot;</span>
+    <span class="c"># find (n-1)**2 + n**2</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&quot;n must be &gt;= 2&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">sum1</span> <span class="o">=</span> <span class="mi">5</span>
+        <span class="n">sum2</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">sum1</span> <span class="o">=</span> <span class="n">sum_of_squares</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">sum2</span> <span class="o">=</span> <span class="n">sum_of_squares</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">sum1</span> <span class="o">-</span> <span class="n">sum2</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">hypotenuse</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.23606797749979
+2.23606797749979
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span class="nb">print</span><span class="p">(</span><span class="n">hypotenuse</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">10</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">9</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>13.45362404707371
+13.45362404707371
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>
