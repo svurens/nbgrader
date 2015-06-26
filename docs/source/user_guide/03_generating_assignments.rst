@@ -87,10 +87,10 @@ of each notebook in the assignment:
 
     [AssignApp | INFO] Created profile dir: '/home/travis/.ipython/profile_nbgrader'
     [AssignApp | INFO] Linking source/./Problem Set 1/jupyter.png -> release/./Problem Set 1/jupyter.png
-    [AssignApp | INFO] Converting notebook source/./Problem Set 1/Problem 1.ipynb to notebook
-    [AssignApp | INFO] Writing 8082 bytes to release/./Problem Set 1/Problem 1.ipynb
     [AssignApp | INFO] Converting notebook source/./Problem Set 1/Problem 2.ipynb to notebook
     [AssignApp | INFO] Writing 2517 bytes to release/./Problem Set 1/Problem 2.ipynb
+    [AssignApp | INFO] Converting notebook source/./Problem Set 1/Problem 1.ipynb to notebook
+    [AssignApp | INFO] Writing 8082 bytes to release/./Problem Set 1/Problem 1.ipynb
     [AssignApp | INFO] Setting destination file permissions to 644
 
 
