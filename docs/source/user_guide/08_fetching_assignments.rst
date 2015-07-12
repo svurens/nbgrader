@@ -35,6 +35,7 @@ configuration file that sets the appropriate directory for them:
     
     c = get_config()
     c.TransferApp.exchange_directory = '/tmp/exchange'
+    c.NbGraderConfig.course_id = "example_course"
 
 
 .. parsed-literal::
@@ -50,7 +51,7 @@ released using ``nbgrader list``, and passing the name of the class:
     %%bash
     export HOME=/tmp/student_home && cd $HOME
     
-    nbgrader list "example_course"
+    nbgrader list
 
 
 .. parsed-literal::
@@ -69,7 +70,7 @@ assignment:
     %%bash
     export HOME=/tmp/student_home && cd $HOME
     
-    nbgrader fetch "example_course" "Problem Set 1"
+    nbgrader fetch "Problem Set 1"
 
 
 .. parsed-literal::
@@ -92,7 +93,7 @@ directory to the local directory:
 .. parsed-literal::
 
     total 20
-    -r--r--r-- 1 travis travis 5733 Jul 12 21:44 jupyter.png
-    -rw-r--r-- 1 travis travis 8082 Jul 12 21:44 Problem 1.ipynb
-    -rw-r--r-- 1 travis travis 2517 Jul 12 21:44 Problem 2.ipynb
+    -r--r--r-- 1 travis travis 5733 Jul 12 22:03 jupyter.png
+    -rw-r--r-- 1 travis travis 8082 Jul 12 22:03 Problem 1.ipynb
+    -rw-r--r-- 1 travis travis 2517 Jul 12 22:03 Problem 2.ipynb
 

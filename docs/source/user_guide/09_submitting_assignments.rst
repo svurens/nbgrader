@@ -19,14 +19,14 @@ and the name of the class:
     %%bash
     export HOME=/tmp/student_home && cd $HOME
     
-    nbgrader submit "Problem Set 1" "example_course"
+    nbgrader submit "Problem Set 1"
 
 
 .. parsed-literal::
 
     [SubmitApp | INFO] Source: /tmp/student_home/Problem Set 1
-    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 21:44:57 UTC
-    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 21:44:57 UTC
+    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 22:04:21 UTC
+    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 22:04:21 UTC
 
 
 Students can see what assignments they have submitted using
@@ -37,13 +37,13 @@ Students can see what assignments they have submitted using
     %%bash
     export HOME=/tmp/student_home && cd $HOME
     
-    nbgrader list "example_course" --inbound
+    nbgrader list --inbound
 
 
 .. parsed-literal::
 
     [ListApp | INFO] Submitted assignments:
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 21:44:57 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 22:04:21 UTC
 
 
 Importantly, students can run ``nbgrader submit`` as many times as they
@@ -54,14 +54,14 @@ want, and all submitted copies of the assignment will be preserved:
     %%bash
     export HOME=/tmp/student_home && cd $HOME
     
-    nbgrader submit "Problem Set 1" "example_course"
+    nbgrader submit "Problem Set 1"
 
 
 .. parsed-literal::
 
     [SubmitApp | INFO] Source: /tmp/student_home/Problem Set 1
-    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 21:44:59 UTC
-    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 21:44:59 UTC
+    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 22:04:23 UTC
+    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 22:04:23 UTC
 
 
 We can see all versions that have been submitted by again running
@@ -72,12 +72,12 @@ We can see all versions that have been submitted by again running
     %%bash
     export HOME=/tmp/student_home && cd $HOME
     
-    nbgrader list "example_course" --inbound
+    nbgrader list --inbound
 
 
 .. parsed-literal::
 
     [ListApp | INFO] Submitted assignments:
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 21:44:57 UTC
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 21:44:59 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 22:04:21 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 22:04:23 UTC
 
