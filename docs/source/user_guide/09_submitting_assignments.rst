@@ -25,8 +25,8 @@ and the name of the class:
 .. parsed-literal::
 
     [SubmitApp | INFO] Source: /tmp/student_home/Problem Set 1
-    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 16:02:03 UTC
-    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 16:02:03 UTC
+    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 21:44:57 UTC
+    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 21:44:57 UTC
 
 
 Students can see what assignments they have submitted using
@@ -43,7 +43,7 @@ Students can see what assignments they have submitted using
 .. parsed-literal::
 
     [ListApp | INFO] Submitted assignments:
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 16:02:03 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 21:44:57 UTC
 
 
 Importantly, students can run ``nbgrader submit`` as many times as they
@@ -60,8 +60,8 @@ want, and all submitted copies of the assignment will be preserved:
 .. parsed-literal::
 
     [SubmitApp | INFO] Source: /tmp/student_home/Problem Set 1
-    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 16:02:06 UTC
-    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 16:02:06 UTC
+    [SubmitApp | INFO] Destination: /tmp/exchange/example_course/inbound/travis+Problem Set 1+2015-07-12 21:44:59 UTC
+    [SubmitApp | INFO] Submitted as: example_course Problem Set 1 2015-07-12 21:44:59 UTC
 
 
 We can see all versions that have been submitted by again running
@@ -78,6 +78,6 @@ We can see all versions that have been submitted by again running
 .. parsed-literal::
 
     [ListApp | INFO] Submitted assignments:
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 16:02:03 UTC
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 16:02:06 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 21:44:57 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 21:44:59 UTC
 
