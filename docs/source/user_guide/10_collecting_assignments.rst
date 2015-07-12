@@ -23,8 +23,8 @@ what has been submitted with ``nbgrader list --inbound``:
 .. parsed-literal::
 
     [ListApp | INFO] Submitted assignments:
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 05:59:39 UTC
-    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 05:59:42 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 15:53:38 UTC
+    [ListApp | INFO] example_course travis Problem Set 1 2015-07-12 15:53:40 UTC
 
 
 The instructor can then collect all submitted assignments with
@@ -55,7 +55,7 @@ way that is automatically compatible with ``nbgrader autograde``:
 .. parsed-literal::
 
     total 0
-    drwxrwxr-x 3 travis travis 60 Jul 12 05:59 Bitdiddle
-    drwxrwxr-x 3 travis travis 60 Jul 12 05:59 Hacker
-    drwxrwxr-x 3 travis travis 60 Jul 12 05:59 travis
+    drwxrwxr-x 3 travis travis 60 Jul 12 15:53 Bitdiddle
+    drwxrwxr-x 3 travis travis 60 Jul 12 15:53 Hacker
+    drwxrwxr-x 3 travis travis 60 Jul 12 15:53 travis
 
